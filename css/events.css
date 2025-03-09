@@ -1,0 +1,172 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'PP Right Gothic', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('https://media.giphy.com/media/3o7qE2KFaCY1xVIqu4/giphy.gif?cid=ecf05e47ouy79ho7an8rj9dvmmjlnhzl0pg0xhb7enubqswv&ep=v1_gifs_search&rid=giphy.gif&ct=g') center center/cover; 
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #33333333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    font-family: 'PP Right Gothic', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Events Section Styling */
+.events {
+    padding: 100px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.events h1 {
+    font-family: 'Helvair Graffiti', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 150px; /* Increase this value if it's still too high */
+    color: #00ffff;
+
+}
+
+.events p {
+    font-size: 40px;
+    color: #ccc;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Event List Styling (Updated to make lines shorter) */
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the events */
+}
+
+.event-item {
+    width: 80%;  /* Adjust the width to make the lines shorter */
+    max-width: 800px;  /* Set a max-width for better control */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid #444; /* Line between events */
+    margin-bottom: 20px;
+}
+
+.event-item h3 {
+    font-size: 24px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.event-item .date {
+    font-size: 18px;
+    color: #e63946;
+    font-weight: bold;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #33333346;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.325);
+    font-size: 18px;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #e63946;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events h1 {
+        font-size: 28px;
+    }
+
+    .events p {
+        font-size: 16px;
+    }
+
+    .event-list {
+        padding-left: 20px;
+    }
+
+    .event-item {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}

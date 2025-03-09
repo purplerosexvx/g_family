@@ -1,0 +1,144 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('https://media.giphy.com/media/3o7qE2KFaCY1xVIqu4/giphy.gif?cid=ecf05e47ouy79ho7an8rj9dvmmjlnhzl0pg0xhb7enubqswv&ep=v1_gifs_search&rid=giphy.gif&ct=g') center center/cover;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #33333333;
+    padding: 25px;
+    display: flex;
+    justify-content: center;  /* Aligns the content to the right */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0; /* Position the nav bar at the right */
+    width: 100%;
+    z-index: 10;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'PP Right Gothic', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    background: url('https://media.giphy.com/media/3o7qE2KFaCY1xVIqu4/giphy.gif?cid=ecf05e47ouy79ho7an8rj9dvmmjlnhzl0pg0xhb7enubqswv&ep=v1_gifs_search&rid=giphy.gif&ct=g') center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Helvair Graffiti', sans-serif;
+    color: #b1000f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(181, 0, 0, 0.7);
+}
+
+.hero .logo img {
+    max-width: 400px; /* Larger logo in the hero section */
+    height: auto;
+    margin-bottom: 30px; /* Spacing between logo and text */
+}
+
+
+.btn {
+    background-color: #c1001038;
+    padding: 10px 200px;
+    font-family: 'PP Right Gothic', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff000082;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #33333346;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Old English Five', sans-serif;
+    color: white;
+    margin-top: auto;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.325);
+    font-size: 18px;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #e63946;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}

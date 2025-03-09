@@ -1,0 +1,173 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    background: url('https://media.giphy.com/media/3o7qE2KFaCY1xVIqu4/giphy.gif?cid=ecf05e47ouy79ho7an8rj9dvmmjlnhzl0pg0xhb7enubqswv&ep=v1_gifs_search&rid=giphy.gif&ct=g') center center/cover; 
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer sticks to the bottom */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #33333333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'PP Right Gothic', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* About Section Styling */
+.about {
+    padding: 100px 20px;
+    text-align: center;
+    flex: 1; /* Makes sure the section takes up remaining space and pushes the footer down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-family: 'Helvair Graffiti', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    color: #c1000f; /* Red heading color */
+}
+
+.about p {
+    font-size: 30px;
+    font-family: 'PP Right Gothic', sans-serif;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#artists {
+    background-color: #22222200;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#artists h2 {
+    font-size: 36px;
+    font-family: 'Helvair Graffiti', sans-serif;
+    margin-bottom: 40px;
+    color: #b1000f;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px; /* Space between each artist */
+}
+
+.artist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 80%; /* Set width for each artist */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.artist-photo {
+    width: 40%;
+}
+
+.artist-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.artist-info {
+    width: 60%;
+    color: white;
+}
+
+.artist-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.artist-info p {
+    font-size: 16px;
+}
+
+/* Staggered layout for Artist 2 */
+.artist-container .artist:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #33333346;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Old English Five', sans-serif;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
